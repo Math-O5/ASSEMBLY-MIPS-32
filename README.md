@@ -1,11 +1,11 @@
 # ASSEMBLY-MIPS-32
-Some implementations and works using this amazing language.
+Some implementations and works using this amazing language.\n
 Algumas implementações e projetos usando essa incrivel linguagem.
 
 ARCHITECTURE MIPS use all aritmetic and logic operation with your 32-bit registers, above here are them:
 
 
-| Numbers Reg| Identifier Name | Description | Preseved across procedure calls |
+| Numbers Registradores| Identifier Name | Description | Preseved across procedure calls |
 | --- | --- | --- | --- |
 | 0 | Zero | value 0 | |
 | 1 | at | (assembler temporary) reserved by the assembler | |
@@ -21,6 +21,6 @@ ARCHITECTURE MIPS use all aritmetic and logic operation with your 32-bit registe
 | 31 | $ra | return address | |
 
 ## Reference
-  Organização e projeto de computadores, DAVID A. PATTERSON e JOHN L. HENNESSY.
+  Organização e projeto de computadores, DAVID A. PATTERSON e JOHN L. HENNESSY.\n
   http://logos.cs.uic.edu/366/notes/
   

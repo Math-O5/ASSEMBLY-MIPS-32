@@ -47,7 +47,9 @@ ARCHITECTURE MIPS use all aritmetic and logic operation with your 32-bit registe
   j Exit                  # jump to Exit
   Else:sub $s0,$s1,$s2    # f = g - h
   Exit:
-  
+      li $v0,1
+      la $a0,10           # Exit program is 10
+      syscall
 ```
 ## OBS
   - Registers are the fastest memory in the computer.

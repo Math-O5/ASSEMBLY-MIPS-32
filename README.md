@@ -22,9 +22,9 @@ ARCHITECTURE MIPS use all aritmetic and logic operation with your 32-bit registe
 
 ## Logical operation
   Using the boolean algebric with assembly.
-  ´´´bash
+  ```bash
     sll $t2, $s0, 4       # shift left logical: registrador $t2 << 4 bits 
-  ´´´
+  ```
 
 ## OBS
   - Registers are the fastest memory in the computer.

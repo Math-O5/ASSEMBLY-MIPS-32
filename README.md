@@ -24,10 +24,15 @@ ARCHITECTURE MIPS use all aritmetic and logic operation with your 32-bit registe
   Using the boolean algebric with assembly.
   ```bash
     sll $t2, $s0, 4       # shift left logical: registrador $t2 << 4 bits 
+    srl $t2, $s0, 4       # shift right logical: reg $t2 >> 4 bits
+    or  $t0, $t1, $t2     # OR: reg $t0 = reg ($t1 | $t2)
+    and $t0, $t1, $t2     # AND: reg $t0 = reg ($t1 & $t2)
+    nor $t0, $t1, $t2     # NOT OR: reg $t0 = reg ~($t1 | $t2)
   ```
 
 ## OBS
   - Registers are the fastest memory in the computer.
+  - '~' this is the complement. If the number is 0101, the ~(0101) = 1010 
   
 ## Reference
   Organização e projeto de computadores, DAVID A. PATTERSON e JOHN L. HENNESSY.\n

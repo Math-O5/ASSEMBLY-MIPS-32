@@ -29,7 +29,14 @@ ARCHITECTURE MIPS use all aritmetic and logic operation with your 32-bit registe
     and $t0, $t1, $t2     # AND: reg $t0 = reg ($t1 & $t2)
     nor $t0, $t1, $t2     # NOT OR: reg $t0 = reg ~($t1 | $t2)
   ```
+## If-then-else
 
+```
+  if(i == j) f = g + h; else f = g - h;       # Let's execute this
+  f = g + (i == j)? h : -h;                   # Rewrite!
+  # f,g,h,i,j is $s0..$s4
+  
+```
 ## OBS
   - Registers are the fastest memory in the computer.
   - '~' this is the complement. If the number is 0101, the ~(0101) = 1010 

@@ -20,6 +20,15 @@ ARCHITECTURE MIPS use all aritmetic and logic operation with your 32-bit registe
 | 30 | $s8/$fp | saved value / frame pointer | Yes |
 | 31 | $ra | return address | |
 
+## Logical operation
+  Using the boolean algebric with assembly.
+  ´´´bash
+    sll $t2, $s0, 4       # shift left logical: registrador $t2 << 4 bits 
+  ´´´
+
+## OBS
+  - Registers are the fastest memory in the computer.
+  
 ## Reference
   Organização e projeto de computadores, DAVID A. PATTERSON e JOHN L. HENNESSY.\n
   http://logos.cs.uic.edu/366/notes/

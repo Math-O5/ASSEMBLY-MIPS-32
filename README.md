@@ -20,6 +20,14 @@ ARCHITECTURE MIPS use all aritmetic and logic operation with your 32-bit registe
 | 30 | $s8/$fp | saved value / frame pointer | Yes |
 | 31 | $ra | return address | |
 
+## Data types
+  | key |bit| byte | description |
+  |---|---|---|---|
+  
+  |Instruction| 32 | 4 | operation like add, sub, move and so on|
+  | word| 32 | 4 | store integer, for example |
+  | char | 4 | 1 | |
+  
 ## Logical operation
   Using the boolean algebric with assembly.
   ```bash

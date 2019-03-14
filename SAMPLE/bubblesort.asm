@@ -13,15 +13,16 @@
 .data
 	.align 2
 	vet: .word 7,5,2,1,1,3,4		# UM VETOR DESORDENADO
+	gap: .byte ' '				# espaco branco
 	
 .text
 	.globl main
 	
 	main:	addi $t3, $zero, 28		# MAX (7 words)
-		addi $t0, $zero, 0		# i
+		addi $t0, $zero, 0		# i = 0
 	
 	#IMPRIME DESORDENADO
-	addi $t0, $zero, 0			# i = 0
+	
 	ordi2:	beq $t0, $t3, fim_ordi2		# se i == MAX, vah para fim_ord2
 		
 		lw $t6, vet($t0) 		# aux = v[i] 
@@ -68,6 +69,10 @@
 		li $v0, 1			# imprime inteiro
 		add $a0, $zero, $t6
 		syscall
+	 	
+	 	li $v0, 4			# imprime espaco em branco
+	 	la $a0, gap
+	 	syscall
 	 	
 	 	addi $t0, $t0,  +4
 	 	j ordi3

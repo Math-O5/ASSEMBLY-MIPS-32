@@ -10,7 +10,7 @@
 	vet: .word 1,2,3 
 .text
 	
-	# Um cÛdigo externo pode executar a funÁ„o:
+	# Um c√≥digo externo pode executar a fun√ß√£o:
 	.globl main
 	.globl  sum_matriz
 	.globl mul_matriz
@@ -26,8 +26,8 @@
 	mul_matriz:
 	
 	func:	
-		# Alocar memÛria  na pilha, add inteiro
-		# Passar argumentos, e para cada um s„o necessarios 4 bytes.
+		# Alocar mem√≥ria  na pilha, add inteiro
+		# Passar argumentos, e para cada um s√£o necessarios 4 bytes.
 		addi $sp, $sp, -8
 		sw $a0, 4($sp)
 		sw $ra, ($sp)
@@ -50,19 +50,19 @@
 		
 		# div => mflo e mfli
 		# mflo => quociente
-		# mfhi => resto da divis„o
+		# mfhi => resto da divis√£o
 		div $t1, $t2
 		mflo $t3 
 		mfhi $t0
 
-		# mult ignora os mais significativos
+		# mul ignora os mais significativos
 		# mult =>  mflo e mfhi
 		# mflo => bit menos significativos
 		# mfhi => bit mais sig
-		
+	
 		# sbrk
-		# Alocando memÛria dinamicamente,  
-		# em a0 dizer quantos bytes ser„o alocados.
+		# Alocando mem√≥ria dinamicamente,  
+		# em a0 dizer quantos bytes ser√£o alocados.
 		li $v0, 9
 		li $a0, 40
 		syscall

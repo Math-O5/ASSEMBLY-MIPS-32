@@ -1,6 +1,10 @@
 # ASSEMBLY-MIPS-32
-Some implementations and works using this amazing language.\n
+Some implementations and works using this amazing language.</br>
 Algumas implementações e projetos usando essa incrivel linguagem.
+
+Projects
+<h2><a href="https://github.com/Math-O5/calculadoraMIPS">Mips Calculator</a> construida usando apenas ASSEMBLY-MIPS.</h2>
+<h2><a href="https://github.com/Math-O5/ASSEMBLY-MIPS-32/tree/master/SAMPLE">Sample</a> códigos em C traduzidos para ssembly.</h2>
 
 ARCHITECTURE MIPS use all aritmetic and logic operation with your 32-bit registers, above here are them:
 
